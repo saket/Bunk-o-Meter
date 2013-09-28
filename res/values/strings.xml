@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- App details -->
+    <string name="app_name">Bunk-o-Meter</string>
+
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=com.saketme.bunkometer</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Activity names -->
+    <string name="title_activity_notification_settings">Notification settings</string>
+    <string name="title_activity_setup_bunkometer">Add multiple subjects</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_tour">Bunk-o-Meter</string>
+    <string name="title_activity_subjects_list">Subjects list</string>
+
+ <!-- COLORS -->
+
+    <!-- Activity backgrounds -->
+    <color name="app_background">#d3d7d9</color>
+    <color name="add_subjects_background">#222222</color>
+    <color name="tour_background">#f8fafb</color>
+
+    <!-- Tour -->
+    <color name="ready_color">#25c19e</color>
+    <color name="welcome_start_button_normal">#bb000000</color>
+    <color name="welcome_start_button_pressed">#BB0099cc</color>
+
+    <color name="note_bg">#f1e7cc</color>
+    <color name="bunk_bg">#d9eaf1</color>
+    <color name="budvisor_bg">#d0f0c8</color>
+    <color name="reminder_bg">#edd9d9</color>
+
+    <!-- Card -->
+    <color name="card_dismiss_button_normal">#222</color>
+    <color name="card_dismiss_button_pressed">#111</color>
+
+    <!-- Notification settings -->
+    <color name="notification_settings_time_picker_bg_default">#fff</color>
+    <color name="notification_settings_time_picker_bg_pressed">#6633b5e5</color>
+
+    <color name="subject_bg">#33B5E5</color>
+    <color name="dynamic_subject_normal">#fff</color>
+    <color name="dynamic_subject_pressed">#f3f3f3</color>
+    <color name="dynamic_subject_red_glow">#ffe4e4</color>
+    <color name="dynamic_subject_yellow_glow">#ffecc0</color>
+
+    <!-- About -->
+    <color name="gplus_pressed">#5add4b39</color>
+    <color name="email_pressed">#5a00c345</color>
+
+    <!-- Bunk percentage -->
+    <color name="bunk_excellent">#00c345</color>
+    <color name="bunk_good">#e1c003</color>
+    <color name="bunk_bad">#ff4444</color>
+    <color name="bunk_grey">#dcdcdc</color>
+    <color name="percentage_normal">#aaa</color>
+    <color name="percentage_alert">#ff9494</color>
+
+    <!-- New subject -->
+    <color name="multiple_subs_normal">#3300c345</color>
+    <color name="multiple_subs_pressed">#6600c345</color>
+
+    <!-- Tell a friend -->
+    <color name="spread_word_normal">#110a4563</color>
+    <color name="spread_word_pressed">#180a4563</color>
+
+ <!-- STRINGS -->
+
+    <!-- Common strings -->
+    <string name="discard_text">Discard</string>
+    <string name="save_text">Save</string>
+    <string name="delete_text">Delete</string>
+    <string name="modify_text">Modify</string>
+
+    <!-- Confirm delete -->
+    <string name="for_sure">for Sure?"</string>
+    <string name="yep">Yep</string>
+    <string name="finallyexcl">Finally!</string>
+
+    <!-- Welcome screen -->
+    <string name="start_button">START ></string>
+
+    <!-- Main activity -->
+    <string name="main_activity_subjects">SUBJECTS</string>
+    <string name="bunked">BUNKED</string>
+    <string name="select_action">Select an action</string>
+    <string name="nothing_to_delete">Nothing to delete</string>
+
+    <!-- Tour -->
+    <string name="tour_bunk_title">Oh, Wait</string>
+
+    <string name="tour_bunk_msg">If \"bunk\" sounds alien to you, it\'s a school slang used for skipping (not attending) a class.</string>
+
+    <string name="tour_what_is_it_title">Hello</string>
+    <string name="tour_what_is_it">We college students have a habit of misplacing things, including our class bunk records. Bunk-o-Meter solves this problem.</string>
+
+    <string name="tour_budvisor_title">Budvisor</string>
+    <string name="tour_budvisor_msg">This is your bunk advisor, or in short, budvisor. He\'ll keep an eye on your bunks and advise whenever necessary.</string>
+
+    <string name="tour_notification_title">Ding dong</string>
+    <string name="tour_notification_msg">Lastly, to ensure that you never forget to record bunks, Bunk-o-Meter will send daily notifications. This is fully customizable.</string>
+
+    <string name="tour_next_button_label">NEXT ></string>
+    <string name="tour_im_ready_button_label">I\'M READY ></string>
+    <string name="tour_prev_button_label">&lt; PREV</string>
+
+    <!-- Card -->
+    <string name="card_placeholder_message">I hope you\'re enjoying Bunk-O-Meter. Feel free to send suggestions to saket@saket.me</string>
+
+    <!-- Add Subjects screen -->
+    <string name="add_subjects_tip"><b>Bunk limit:</b> Maximum classes that you can bunk</string>
+
+    <!-- Notification settings -->
+    <string name="notification_default_time">7:30</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
+    <string name="touch_change">Touch to change</string>
+    <string name="toggle_notification">Toggle Notification</string>
+    <string name="notification_settings_turned_off_text">Notification is turned off</string>
+    <string name="notification_settings_options_label">Additional settings</string>
+    <string name="notification_desc">Never miss to record a single bunk. Bunk-o-Meter will send daily notifications at the above set time.</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="play_sound">Play sound</string>
+    <string name="show_icon">Show icon in status bar</string>
+
+    <!-- Notification -->
+    <string name="notification_title_welcome">Configure Notifications</string>
+    <string name="notification_text_welcome">Never forget to record your bunks</string>
+    <string name="notification_ticker_welcome">Configure notification settings for Bunk-o-Meter</string>
+
+    <string name="notification_title">Bunk-o-Meter</string>
+    <string name="notification_text">Time to record bunks for today</string>
+    <string name="notification_ticker">So, how many classes did you bunk today?</string>
+
+    <!-- No Subjects View -->
+    <string name="no_subjects_title">IT\'S EMPTY HERE</string>
+    <string name="no_subjects_msg">Go on, add your most hated subjects</string>
+    <string name="made_with" tools:ignore="UnusedResources">Made with </string>
+    <string name="heart" tools:ignore="UnusedResources">&#9829;</string>
+    <string name="in_India" tools:ignore="UnusedResources"> in India </string>
+
+    <!-- Enjoying Bunk-o-Meter View -->
+    <string name="enjoying_bm">Enjoying Bunk-o-Meter?</string>
+    <string name="enjoying_bm_message">Would you like to share it with your friends?</string>
+
+    <string name="touch_respond">touch to respond</string>
+    <string name="touch_close">touch to close</string>
+
+    <string name="no">No</string>
+    <string name="sure">Sure!</string>
+    <string name="later">Later</string>
+    <string name="you_rock">You rock!</string>
+
+    <!-- Tell a friend Dialog -->
+    <string name="tell_a_friend_title">TELL A FRIEND</string>
+    <string name="share_bunkometer_message">Never fall short of attendance again. Install Bunk-o-Meter and bunk your way to glory! \n(P.S. Not for geeks.) </string>
+    <string name="play_store_link_attach">(Play Store link will automatically be attached)</string>
+
+    <!-- Delete All Subjects Dialog -->
+    <string name="delete_all_subs_title">DELETE \'EM ALL?</string>
+    <string name="delete_all_subs_message">This will delete all your subjects and their respective attendance records. Think twice before you continue.</string>
+
+    <!-- New Subject -->
+    <string name="modify_text_caps">MODIFY: </string>
+    <string name="new_subject_title">ADD A NEW SUBJECT</string>
+    <string name="add_multiple_subjects">Add multiple subjects</string>
+    <string name="classes_already_bunked_label">Classes already bunked:</string>
+    <string name="limit_for_bunking_label">Limit for bunking:</string>
+    <string name="empty_fields_error">Fields cannot be empty</string>
+    <string name="bunked_more_than_limit">Already bunked more classes than the limit?</string>
+    <string name="limit_zero">Limit for bunking classes cannot be zero.</string>
+
+    <!-- Add Multiple Subjects -->
+    <string name="duplicate_entry_error">Duplicate entry</string>
+    <string name="duplicate_entries_error">duplicate_entries_error</string>
+    <string name="sub_exists_error">Subject already exists</string>
+    <string name="subs_exist_error">Subjects already exist</string>
+    <string name="fields_empty_error">Fields cannot be empty</string>
+    <string name="zero_limit_error">Limit for bunking classes cannot be zero.</string>
+    <string name="no_subs_error">Uhm&#8230; at-least add one subject?</string>
+
+    <!-- About activity -->
+    <string name="send_feedback_bug_report">Send feedback / bug report</string>
+    <string name="rate_on_play_store">Rate it on Play Store!</string>
+    <string name="the_app">THE APP</string>
+    <string name="the_dev">THE DEVELOPER</string>
+    <string name="special_thanks">SPECIAL THANKS</string>
+
+    <string name="saket">Saket Narayan</string>
+    <string name="touch_know">Touch to know more</string>
+    <string name="email">Email</string>
+
+    <string name="about_main_messsage">Bunk-o-Meter let\'s you record your class bunks and helps you stay within attendance limits.</string>
+    <string name="about_special_thanks_message">My buddy, <b>Sagar Thakar</b> for his creative ideas and the beta testers for their feedback &amp; bug reports:
+    \n\n<li>Rishi Mohan</li>
+    \n<li>Ganesh Hegde</li>
+    \n<li>Arpit Verma</li>
+    \n<li>Joel Fernandes</li>
+    \n<li>Vibin Reddy</li>
+    \n<li>Abhijoy Sarkar</li>
+    </string>
+
+    <string name="hey_there">HEY THERE!</string>
+    <string name="dev_contact_message">I\'m an Android aficionado, a computer geek and a tech blogger. Connect with me:</string>
+
+    <!-- Subject Tour Tip -->
+    <string name="subject_tour_tip_1"><b>Here\'s your first subject.</b> \nLong press to delete it or modify its name and bunk details.</string>
+    <string name="subject_tour_tip_2">The <b>+</b> button will increment your bunk count by one class.</string>
+    <string name="subject_tour_tip_3">Arise, awake and bunk your way to glory until the limit is reached!</string>
+
+    <string name="OK">OK</string>
+    <string name="got_it">Got it!</string>
+
+    <!-- Subject entry (Bulk Subs) -->
+    <string name="add_subjects_title">ADD MULTIPLE SUBJECTS</string>
+    <string name="add_another_label">+ Add another</string>
+    <string name="subject_name">Subject name</string>
+    <string name="bunk_limit">Bunk limit</string>
+
+ <!-- MENU -->
+
+    <!-- Main Activity -->
+    <string name="menu_main_activity_add">Add new subject</string>
+    <string name="menu_main_activity_debug" tools:ignore="UnusedResources">Debug</string>
+    <string name="menu_main_activity_TAF">Tell a friend</string>
+    <string name="menu_main_activity_delete_all">Delete all subjects</string>
+    <string name="menu_main_activity_notification_settings">Notification settings</string>
+    <string name="menu_main_activity_about">About</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/fill_database"
+        android:title="Fill"
+        android:showAsAction="always" />
+    
+    <item 
+        android:id="@+id/empty_database"
+        android:title="Empty"
+        android:showAsAction="always" />
+    
+    <item 
+        android:id="@+id/reset_share_counter"
+        android:title="Reset Share counter"
+        android:showAsAction="always" />
+    
+</menu>

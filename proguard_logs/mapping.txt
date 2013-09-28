@@ -1,0 +1,510 @@
+com.saket.bunkometer.About -> com.saket.bunkometer.About:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onBackPressed() -> onBackPressed
+com.saket.bunkometer.AddSubjects -> com.saket.bunkometer.AddSubjects:
+    java.util.List SUBJECT_NAME -> b
+    java.util.List SUBJECT_BUNK_LIMIT -> c
+    int unique_id -> d
+    android.widget.LinearLayout entryContainer -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void addEntry(android.view.View) -> addEntry
+    void onClick(android.view.View) -> onClick
+    void deleteEntry(android.view.View) -> deleteEntry
+    java.lang.Boolean findUnsavedChanges(java.lang.String) -> a
+    void onBackPressed() -> onBackPressed
+com.saket.bunkometer.AddSubjects$1 -> com.saket.bunkometer.a:
+    android.widget.ScrollView val$scrollView -> a
+    com.saket.bunkometer.AddSubjects this$0 -> b
+    void run() -> run
+com.saket.bunkometer.AddSubjects$2 -> com.saket.bunkometer.b:
+    com.saket.bunkometer.AddSubjects this$0 -> a
+    void run() -> run
+com.saket.bunkometer.AddSubjects$3 -> com.saket.bunkometer.c:
+    com.saket.bunkometer.AddSubjects this$0 -> a
+    void run() -> run
+com.saket.bunkometer.Brain -> com.saket.bunkometer.d:
+    java.lang.String Title -> a
+    java.lang.String Message -> b
+    java.lang.String Face -> c
+    java.lang.String Card_ID -> d
+    java.lang.String Dismiss_button -> e
+    java.lang.Boolean show_card -> f
+    int optimal_no_of_subjects -> g
+    android.content.Context context -> h
+    java.util.List found_subjects_list -> i
+    com.saket.bunkometer.BrainHandler bh -> j
+    boolean decide(int) -> a
+    void initializeCard(int) -> b
+    java.lang.Boolean messageSemOver() -> b
+    java.lang.Boolean alert100Limit() -> c
+    java.lang.Boolean warning90Limit() -> d
+    java.lang.Boolean warning50Limit() -> e
+    java.lang.Boolean warning2Bunks() -> f
+    java.lang.Boolean tipCreativeIdeas() -> g
+    java.lang.Boolean tipNoBunkForAWeek(android.content.Context) -> a
+    java.lang.String getCurrentDate() -> a
+com.saket.bunkometer.BrainHandler -> com.saket.bunkometer.e:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void setState(java.lang.String,java.lang.String) -> a
+    java.lang.Boolean getVisibility(java.lang.String) -> a
+    void setVisibility(java.lang.String,java.lang.String) -> b
+    void resetAll() -> a
+com.saket.bunkometer.Classes -> com.saket.bunkometer.f:
+    int id -> a
+    int bunked_classes -> b
+    int limit -> c
+    java.lang.String subject -> d
+    java.lang.String bunk_date -> e
+    int getBunkedClasses() -> a
+    java.lang.String getSubject() -> b
+    int getLimit() -> c
+    void setId(int) -> a
+    void setBunkedClasses(int) -> b
+    void setSubject(java.lang.String) -> a
+    void setLimit(int) -> c
+    void setLastBunkDate(java.lang.String) -> b
+com.saket.bunkometer.Confirm_delete -> com.saket.bunkometer.g:
+    com.saket.bunkometer.Confirm_delete newInstance() -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.Confirm_delete$1 -> com.saket.bunkometer.h:
+    java.lang.String val$subject_name -> a
+    com.saket.bunkometer.Confirm_delete this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.Confirm_delete$2 -> com.saket.bunkometer.i:
+    com.saket.bunkometer.Confirm_delete this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.Confirm_exit -> com.saket.bunkometer.j:
+    com.saket.bunkometer.Confirm_exit newInstance() -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.Confirm_exit$1 -> com.saket.bunkometer.k:
+    com.saket.bunkometer.Confirm_exit this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.Confirm_exit$2 -> com.saket.bunkometer.l:
+    com.saket.bunkometer.Confirm_exit this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.DatabaseHandler -> com.saket.bunkometer.m:
+    android.content.Context context -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void addSubject(java.lang.String,int,int,java.lang.String) -> a
+    void updateSubject(java.lang.String,int,int,java.lang.String,java.lang.String) -> a
+    void deleteSubject(java.lang.String) -> a
+    void dropTable() -> a
+    int getLimit(java.lang.String) -> b
+    java.util.List checkBunkPercentageOfAllSubs(int) -> a
+    int countSubjects() -> b
+    java.lang.Boolean countSubjectsSameDate(java.lang.String) -> c
+    java.lang.Boolean isOldDate(java.lang.String,java.lang.String) -> a
+    java.util.List getAllContacts() -> c
+com.saket.bunkometer.DeleteAllSubjectsDialog -> com.saket.bunkometer.n:
+    android.content.Context context -> a
+    com.saket.bunkometer.DeleteAllSubjectsDialog ourInstance -> b
+    com.saket.bunkometer.DeleteAllSubjectsDialog getInstance(android.content.Context) -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.DeleteAllSubjectsDialog$1 -> com.saket.bunkometer.o:
+    com.saket.bunkometer.DeleteAllSubjectsDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.DeleteAllSubjectsDialog$2 -> com.saket.bunkometer.p:
+    com.saket.bunkometer.DeleteAllSubjectsDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.DeveloperContact -> com.saket.bunkometer.q:
+    com.saket.bunkometer.DeveloperContact ourInstance -> a
+    android.content.Context context -> b
+    com.saket.bunkometer.DeveloperContact getInstance(android.content.Context) -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.DeveloperContact$1 -> com.saket.bunkometer.r:
+    com.saket.bunkometer.DeveloperContact this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.MainActivity -> com.saket.bunkometer.MainActivity:
+    int unique_id -> b
+    android.widget.Toast toast -> c
+    com.saket.bunkometer.BrainHandler bh -> d
+    com.saket.bunkometer.DatabaseHandler dh -> e
+    java.lang.Boolean showAnimation -> f
+    int confusedCount -> a
+    java.lang.String main_card_ID -> g
+    java.lang.String main_Title -> h
+    java.lang.String main_Face -> i
+    java.lang.String main_Message -> j
+    java.lang.String main_button -> k
+    java.lang.Boolean main_show_card -> l
+    java.lang.Boolean is_a_card_being_displayed -> m
+    java.lang.String temp_card_name -> n
+    java.lang.String temp_card_id -> o
+    android.widget.LinearLayout MAIN_LAYOUT -> p
+    android.widget.RelativeLayout LONGPRESS_SUBJECT_VIEW -> q
+    android.graphics.Typeface slabFontLight -> r
+    java.util.List LONG_PRESS_LAYOUT -> s
+    java.util.List SUB_NAME -> t
+    java.util.List PERCENTAGE_TEXT -> u
+    java.util.List BUNK_COUNT -> v
+    java.util.List BUNK_COUNT_HIDDEN -> w
+    java.util.List GREY_BUNK_COUNT -> x
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    java.lang.Boolean showSpreadWord() -> a
+    void startTour(android.view.View) -> startTour
+    void addSubjectView(java.lang.String,int,int,int,java.lang.Boolean,int) -> a
+    void subjectTourTip(android.content.SharedPreferences,int,java.lang.Boolean) -> a
+    void spreadTheWord() -> b
+    void expandShareConfirmButtons(android.view.View) -> expandShareConfirmButtons
+    void spreadWordOnClick(android.view.View) -> spreadWordOnClick
+    void tellAFriend() -> c
+    void updateBunkPercentage(int,float,float) -> a
+    void updateGreyColor(android.widget.TextView,int,android.content.Context) -> a
+    int countSubjects() -> d
+    void onClickPlus1(android.view.View) -> onClickPlus1
+    void speedometer(android.widget.TextView,android.widget.TextView,int) -> a
+    void disablePlus1Button(int) -> a
+    void enablePlus1Button(int) -> b
+    void closeCard(android.view.View) -> closeCard
+    void updateCard(int) -> c
+    void restoreSubjects() -> e
+    void deleteSubjectFromDB(java.lang.String,int) -> a
+    void deleteAllSubjectsFromDB() -> f
+    void playAnim(android.content.Context,int,android.view.View,int,int,int) -> a
+    void playAnim(android.content.Context,int,int,int,int,int) -> a
+    void setMainSubjectsView() -> g
+    void setNoSubjectsView(int) -> d
+    void updateSubjectInDB(java.lang.String,int,int,java.lang.String,int) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onBackPressed() -> onBackPressed
+    java.util.List access$000(com.saket.bunkometer.MainActivity) -> a
+    android.graphics.Typeface access$100(com.saket.bunkometer.MainActivity) -> b
+    java.util.List access$200(com.saket.bunkometer.MainActivity) -> c
+    java.util.List access$300(com.saket.bunkometer.MainActivity) -> d
+    java.util.List access$400(com.saket.bunkometer.MainActivity) -> e
+    int access$500(com.saket.bunkometer.MainActivity) -> f
+    java.util.List access$600(com.saket.bunkometer.MainActivity) -> g
+    java.util.List access$700(com.saket.bunkometer.MainActivity) -> h
+    com.saket.bunkometer.DatabaseHandler access$800() -> h
+    java.lang.Boolean access$900(com.saket.bunkometer.MainActivity) -> i
+    int access$508(com.saket.bunkometer.MainActivity) -> j
+    android.widget.LinearLayout access$1000() -> i
+    android.widget.RelativeLayout access$1100() -> j
+    com.saket.bunkometer.BrainHandler access$1200(com.saket.bunkometer.MainActivity) -> k
+    java.lang.String access$1302(com.saket.bunkometer.MainActivity,java.lang.String) -> a
+    java.lang.String access$1402(com.saket.bunkometer.MainActivity,java.lang.String) -> b
+    java.lang.String access$1300(com.saket.bunkometer.MainActivity) -> l
+    java.lang.String access$1502(com.saket.bunkometer.MainActivity,java.lang.String) -> c
+    java.lang.String access$1600(com.saket.bunkometer.MainActivity) -> m
+    java.lang.String access$1400(com.saket.bunkometer.MainActivity) -> n
+    java.lang.String access$1602(com.saket.bunkometer.MainActivity,java.lang.String) -> d
+    java.lang.String access$1702(com.saket.bunkometer.MainActivity,java.lang.String) -> e
+    java.lang.Boolean access$1802(com.saket.bunkometer.MainActivity,java.lang.Boolean) -> a
+    java.lang.String access$1902(com.saket.bunkometer.MainActivity,java.lang.String) -> f
+    java.lang.Boolean access$1800(com.saket.bunkometer.MainActivity) -> o
+    java.lang.String access$1500(com.saket.bunkometer.MainActivity) -> p
+    java.lang.Boolean access$2000(com.saket.bunkometer.MainActivity) -> q
+    java.lang.Boolean access$2002(com.saket.bunkometer.MainActivity,java.lang.Boolean) -> b
+    java.lang.String access$1700(com.saket.bunkometer.MainActivity) -> r
+    java.lang.String access$1900(com.saket.bunkometer.MainActivity) -> s
+com.saket.bunkometer.MainActivity$1 -> com.saket.bunkometer.s:
+    android.os.Bundle val$savedInstanceState -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$10 -> com.saket.bunkometer.t:
+    android.content.SharedPreferences$Editor val$editor -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$11 -> com.saket.bunkometer.u:
+    android.view.View val$spreadWordResult -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$12 -> com.saket.bunkometer.v:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$13 -> com.saket.bunkometer.w:
+    android.view.View val$spreadWordResult -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$14 -> com.saket.bunkometer.x:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$15 -> com.saket.bunkometer.y:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$16 -> com.saket.bunkometer.z:
+    android.widget.TextView val$countView -> a
+    int val$color -> b
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+com.saket.bunkometer.MainActivity$17 -> com.saket.bunkometer.aa:
+    android.graphics.drawable.Drawable val$old -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$18 -> com.saket.bunkometer.ab:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+com.saket.bunkometer.MainActivity$19 -> com.saket.bunkometer.ac:
+    android.widget.TextView val$countView -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+com.saket.bunkometer.MainActivity$2 -> com.saket.bunkometer.ad:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$20 -> com.saket.bunkometer.ae:
+    com.saket.bunkometer.MainActivity$inflateCardAsync val$inflatea_async -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$21 -> com.saket.bunkometer.af:
+    java.lang.String val$subject_name -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$22 -> com.saket.bunkometer.ag:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$23 -> com.saket.bunkometer.ah:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$24 -> com.saket.bunkometer.ai:
+    int val$anim_code -> a
+    android.view.View val$itemView -> b
+    com.saket.bunkometer.MainActivity this$0 -> c
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.saket.bunkometer.MainActivity$24$1 -> com.saket.bunkometer.aj:
+    com.saket.bunkometer.MainActivity$24 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$24$2 -> com.saket.bunkometer.ak:
+    com.saket.bunkometer.MainActivity$24 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$24$3 -> com.saket.bunkometer.al:
+    com.saket.bunkometer.MainActivity$24 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$25 -> com.saket.bunkometer.am:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$26 -> com.saket.bunkometer.an:
+    java.lang.String val$subject_name -> a
+    int val$bunk_count -> b
+    int val$bunk_limit -> c
+    java.lang.String val$old_subject_name -> d
+    com.saket.bunkometer.MainActivity this$0 -> e
+    void run() -> run
+com.saket.bunkometer.MainActivity$3 -> com.saket.bunkometer.ao:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$4 -> com.saket.bunkometer.ap:
+    android.view.View val$subjectLayout -> a
+    java.lang.String val$subject_name -> b
+    int val$bunk_count -> c
+    int val$limit -> d
+    int val$newOrNot -> e
+    int val$totalSubs -> f
+    com.saket.bunkometer.MainActivity this$0 -> g
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$1 -> com.saket.bunkometer.aq:
+    java.lang.String val$subject_press_id -> a
+    com.saket.bunkometer.MainActivity$4 this$1 -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+com.saket.bunkometer.MainActivity$4$2 -> com.saket.bunkometer.ar:
+    com.saket.bunkometer.MainActivity$4 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$3 -> com.saket.bunkometer.as:
+    android.graphics.drawable.Drawable val$oldBG -> a
+    com.saket.bunkometer.MainActivity$4 this$1 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$3$1 -> com.saket.bunkometer.at:
+    com.saket.bunkometer.MainActivity$4$3 this$2 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$4 -> com.saket.bunkometer.au:
+    com.saket.bunkometer.MainActivity$4 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$5 -> com.saket.bunkometer.av:
+    com.saket.bunkometer.MainActivity$4 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$6 -> com.saket.bunkometer.aw:
+    android.widget.ScrollView val$scrollView -> a
+    com.saket.bunkometer.MainActivity$4 this$1 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$4$6$1 -> com.saket.bunkometer.ax:
+    com.saket.bunkometer.MainActivity$4$6 this$2 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$5 -> com.saket.bunkometer.ay:
+    android.widget.ViewFlipper val$flipper -> a
+    android.view.View val$subjectTourTipContainer -> b
+    android.content.SharedPreferences val$mPreferences -> c
+    int val$COUNT -> d
+    android.widget.Button val$okButton -> e
+    com.saket.bunkometer.MainActivity this$0 -> f
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.MainActivity$5$1 -> com.saket.bunkometer.az:
+    com.saket.bunkometer.MainActivity$5 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$6 -> com.saket.bunkometer.ba:
+    com.saket.bunkometer.MainActivity this$0 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$7 -> com.saket.bunkometer.bb:
+    android.widget.LinearLayout val$confirmButtons -> a
+    android.widget.LinearLayout$LayoutParams val$lp -> b
+    int val$sixteenMargin -> c
+    android.widget.LinearLayout val$spreadWordLayout -> d
+    com.saket.bunkometer.MainActivity this$0 -> e
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.saket.bunkometer.MainActivity$7$1 -> com.saket.bunkometer.bc:
+    com.saket.bunkometer.MainActivity$7 this$1 -> a
+    void run() -> run
+com.saket.bunkometer.MainActivity$8 -> com.saket.bunkometer.bd:
+    android.content.SharedPreferences$Editor val$editor -> a
+    com.saket.bunkometer.MainActivity this$0 -> b
+    void run() -> run
+com.saket.bunkometer.MainActivity$9 -> com.saket.bunkometer.be:
+    android.content.SharedPreferences$Editor val$editor -> a
+    android.content.SharedPreferences val$mPreferences -> b
+    com.saket.bunkometer.MainActivity this$0 -> c
+    void run() -> run
+com.saket.bunkometer.MainActivity$AnimateSubjectEntry -> com.saket.bunkometer.bf:
+    android.content.Context context -> a
+    int totalSubs -> b
+    android.widget.LinearLayout subjectsContainer -> c
+    android.view.animation.Animation animation -> d
+    com.saket.bunkometer.MainActivity this$0 -> e
+    void onPreExecute() -> onPreExecute
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.saket.bunkometer.MainActivity$AnimateSubjectEntry$1 -> com.saket.bunkometer.bg:
+    com.saket.bunkometer.MainActivity$AnimateSubjectEntry this$1 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.saket.bunkometer.MainActivity$inflateCardAsync -> com.saket.bunkometer.bh:
+    com.saket.bunkometer.Brain bObj -> a
+    java.lang.Boolean roll_back -> b
+    android.content.Context context -> c
+    java.lang.Boolean ISTHECARDNEW -> d
+    android.widget.LinearLayout subsContainer -> e
+    com.saket.bunkometer.MainActivity this$0 -> f
+    void onPreExecute() -> onPreExecute
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Void) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.saket.bunkometer.MainActivity$inflateCardAsync$1 -> com.saket.bunkometer.bi:
+    android.view.View val$cardLayout -> a
+    com.saket.bunkometer.MainActivity$inflateCardAsync this$1 -> b
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+com.saket.bunkometer.MainActivity$inflateCardAsync$2 -> com.saket.bunkometer.bj:
+    com.saket.bunkometer.MainActivity$inflateCardAsync this$1 -> a
+    void run() -> run
+com.saket.bunkometer.NewSubjectDialog -> com.saket.bunkometer.bk:
+    com.saket.bunkometer.NewSubjectDialog newInstance() -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.NewSubjectDialog$1 -> com.saket.bunkometer.bl:
+    android.widget.EditText val$subject_name_field -> a
+    android.widget.EditText val$bunk_count_field -> b
+    android.widget.EditText val$bunk_limit_field -> c
+    com.saket.bunkometer.DatabaseHandler val$dh -> d
+    boolean val$received_new_or_not -> e
+    android.widget.TextView val$errorText -> f
+    java.lang.String val$received_subject_name -> g
+    com.saket.bunkometer.NewSubjectDialog this$0 -> h
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.NewSubjectDialog$2 -> com.saket.bunkometer.bm:
+    com.saket.bunkometer.NewSubjectDialog this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.NewSubjectDialog$3 -> com.saket.bunkometer.bn:
+    android.widget.EditText val$subject_name_field -> a
+    com.saket.bunkometer.NewSubjectDialog this$0 -> b
+    void onShow(android.content.DialogInterface) -> onShow
+com.saket.bunkometer.NotificationSettings -> com.saket.bunkometer.NotificationSettings:
+    android.content.SharedPreferences mPreferences -> d
+    android.content.SharedPreferences$Editor editor -> e
+    android.widget.CheckBox soundSetting -> a
+    android.widget.RelativeLayout notificationsContainer -> b
+    android.widget.Toast toast -> c
+    boolean mIgnoreTimeSet -> f
+    android.app.TimePickerDialog$OnTimeSetListener timePickerListener -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCheckboxClicked(android.view.View) -> onCheckboxClicked
+    void testNotification(android.view.View) -> testNotification
+    void notificationTimePicker(android.view.View) -> notificationTimePicker
+    void setNotificationTime(int,int) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void playAnim(int,android.view.View,int,int) -> a
+    void onBackPressed() -> onBackPressed
+    boolean access$002(com.saket.bunkometer.NotificationSettings,boolean) -> a
+    boolean access$000(com.saket.bunkometer.NotificationSettings) -> a
+    android.content.SharedPreferences access$100(com.saket.bunkometer.NotificationSettings) -> b
+    android.content.SharedPreferences$Editor access$200(com.saket.bunkometer.NotificationSettings) -> c
+com.saket.bunkometer.NotificationSettings$1 -> com.saket.bunkometer.bo:
+    com.saket.bunkometer.NotificationSettings this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.NotificationSettings$2 -> com.saket.bunkometer.bp:
+    com.saket.bunkometer.NotificationSettings this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.saket.bunkometer.NotificationSettings$3 -> com.saket.bunkometer.bq:
+    com.saket.bunkometer.NotificationSettings this$0 -> a
+    void onTimeSet(android.widget.TimePicker,int,int) -> onTimeSet
+com.saket.bunkometer.NotificationSettings$4 -> com.saket.bunkometer.br:
+    com.saket.bunkometer.NotificationSettings this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.saket.bunkometer.NotificationSettings$5 -> com.saket.bunkometer.bs:
+    com.saket.bunkometer.NotificationSettings this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.saket.bunkometer.Preferences -> com.saket.bunkometer.Preferences:
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.FragmentManager getFragmentManager() -> getFragmentManager
+com.saket.bunkometer.Preferences$SettingsFragment -> com.saket.bunkometer.bt:
+    void onCreate(android.os.Bundle) -> onCreate
+com.saket.bunkometer.ScheduleReceiver -> com.saket.bunkometer.ScheduleReceiver:
+    long START_TIME -> a
+    long TIME_DELAY -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.saket.bunkometer.ShareBunkometerDialog -> com.saket.bunkometer.bu:
+    android.content.Context context -> a
+    com.saket.bunkometer.ShareBunkometerDialog ourInstance -> b
+    com.saket.bunkometer.ShareBunkometerDialog getInstance(android.content.Context) -> a
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+com.saket.bunkometer.ShareBunkometerDialog$1 -> com.saket.bunkometer.bv:
+    android.widget.EditText val$shareMessage -> a
+    com.saket.bunkometer.ShareBunkometerDialog this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.Subjects_list -> com.saket.bunkometer.Subjects_list:
+    java.util.ArrayList classes -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void openAndQueryDatabase() -> a
+    void displayResults() -> b
+    void emptyDatabase() -> c
+    void fillDatabase() -> d
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.saket.bunkometer.TimedNotification -> com.saket.bunkometer.TimedNotification:
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+    void onDestroy() -> onDestroy
+com.saket.bunkometer.WelcomeScreen -> com.saket.bunkometer.WelcomeScreen:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void playAnim(int,android.view.View,int,int) -> a
+com.saket.bunkometer.WelcomeScreen$1 -> com.saket.bunkometer.bw:
+    com.saket.bunkometer.WelcomeScreen this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.WelcomeScreen$2 -> com.saket.bunkometer.bx:
+    android.widget.ImageView val$bunkometerLogo -> a
+    android.widget.Button val$startTourButton -> b
+    com.saket.bunkometer.WelcomeScreen this$0 -> c
+    void run() -> run
+com.saket.bunkometer.WelcomeScreen$2$1 -> com.saket.bunkometer.by:
+    com.saket.bunkometer.WelcomeScreen$2 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.saket.bunkometer.WelcomeScreen$3 -> com.saket.bunkometer.bz:
+    com.saket.bunkometer.WelcomeScreen this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:baselineAligned="false"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ViewFlipper
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/viewFlipper_cover"
+                >
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:background="@color/note_bg"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="48dp">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/flipper_note"
+                        android:src="@drawable/note1"
+                        />
+
+            </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:background="@color/bunk_bg"
+            android:layout_height="fill_parent"
+            android:padding="16dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_phy"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="left|top"
+                android:src="@drawable/sub_phy" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_phy_bunk"
+                android:visibility="invisible"
+                android:layout_gravity="left|top"
+                android:src="@drawable/bunk" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_history"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/sub_history" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_history_bunk"
+                android:visibility="invisible"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/bunk" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_maths"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="left|bottom"
+                android:src="@drawable/sub_maths" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flipper_sub_maths_bunk"
+                android:layout_gravity="left|bottom"
+                android:visibility="invisible"
+                android:src="@drawable/bunk" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@color/budvisor_bg"
+                    android:padding="16dp">
+
+                <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/budvisor_hand"
+                        android:src="@drawable/tour_budvisor_hand"
+                        android:scaleType="fitEnd"
+                        android:layout_marginBottom="-16dp"/>
+
+                <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/budvisor_face"
+                        android:src="@drawable/tour_budvisor_face"
+                        android:padding="8dp"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@color/reminder_bg"
+                    android:padding="16dp">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/flipper_reminder"
+                        android:src="@drawable/tour_notification"
+                        />
+            </LinearLayout>
+
+        </ViewFlipper>
+
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewFlipper_main"
+                    android:layout_gravity="center">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="32dp"
+                        android:id="@+id/flipper_what_is_it"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_what_is_it_title"
+                            android:id="@+id/what_is_it_text"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="24dp"
+                            android:textColor="#222"
+                            android:textStyle="italic"
+                            android:layout_marginTop="-8dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_what_is_it"
+                            android:id="@+id/textView"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16dp"
+                            android:textColor="#333"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="32dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="32dp"
+                    android:paddingBottom="24dp"
+                    android:id="@+id/flipper_bunk">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tour_bunk_title"
+                        android:id="@+id/flipper_bunk_title"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="24dp"
+                        android:textColor="#222"
+                        android:textStyle="italic"
+                        android:layout_marginTop="-8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/tour_bunk_msg"
+                        android:id="@+id/flipper_bunk_msg"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16dp"
+                        android:textColor="#333"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="32dp"
+                        android:paddingBottom="32dp"
+                        android:id="@+id/flipper_budvisor">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_budvisor_title"
+                            android:id="@+id/tour_budvisor_title"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="24dp"
+                            android:textColor="#222"
+                            android:textStyle="italic"
+                            android:layout_marginTop="-8dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_budvisor_msg"
+                            android:id="@+id/tour_budvisor_msg"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="32dp"
+                        android:paddingBottom="32dp"
+                        android:id="@+id/flipper_reminder_container">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_notification_title"
+                            android:id="@+id/tour_notification_title"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="24dp"
+                            android:textColor="#222"
+                            android:textStyle="italic"
+                            android:layout_marginTop="-8dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_notification_msg"
+                            android:id="@+id/tour_notification_msg"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16dp"/>
+                </LinearLayout>
+
+            </ViewFlipper>
+
+        </ScrollView>
+
+        <LinearLayout
+                android:id="@+id/flipper_button_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_alignParentBottom="true"
+                >
+
+            <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/tour_prev_button_label"
+                    android:id="@+id/flipper_prev_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:textColor="@color/subject_bg"
+                    android:onClick="flipPrev"
+                    android:layout_weight="0.5"/>
+
+            <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/tour_next_button_label"
+                    android:id="@+id/flipper_next_button"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:textColor="@color/subject_bg"
+                    android:onClick="flipNext"
+                    android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

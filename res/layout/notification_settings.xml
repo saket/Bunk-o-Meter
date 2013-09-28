@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notifications_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+        >
+
+    <RelativeLayout
+            android:id="@+id/notification_turned_off"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:id="@+id/notification_bell"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:alpha="0.5"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/bell"/>
+
+        <TextView
+                android:id="@+id/notification_turned_off_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_settings_turned_off_text"
+                android:textSize="20dp"
+                android:textColor="#5b5d5e"
+                android:layout_below="@+id/notification_bell"
+                android:visibility="visible"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/notifications_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subject"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+        <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification_time_group"
+                android:onClick="notificationTimePicker"
+                android:background="@drawable/notification_time_picker_background"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_default_time"
+                    android:id="@+id/notification_time"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                 />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/notification_time_meridiem"
+                    android:textSize="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/notification_time"
+                    android:layout_marginLeft="4dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/touch_change"
+                    android:id="@+id/notification_tap_to_change_time"
+                    android:textSize="14dp"
+                    android:textColor="#777"
+                    android:layout_below="@+id/notification_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/notification_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eff3f4"
+                android:layout_below="@+id/notification_time_group"
+                android:text="@string/notification_desc"
+                android:fontFamily="sans-serif-light"
+                android:textSize="14dp"
+                android:padding="16dp"/>
+
+        <LinearLayout
+                android:id="@+id/additional_settings"
+                android:padding="16dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_desc"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                    android:id="@+id/notification_additional_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:clickable="true"
+                    android:onClick="testNotification"
+                    android:textStyle="italic"
+                    android:text="@string/notification_settings_options_label"
+                    android:textSize="22dp"
+                    android:layout_marginBottom="8dp"/>
+
+            <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16dp"
+                    android:text="@string/vibrate"
+                    android:id="@+id/notification_setting_vibration"
+                    android:onClick="onCheckboxClicked"
+                    android:checked="true"/>
+
+            <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16dp"
+                    android:text="@string/play_sound"
+                    android:id="@+id/notification_setting_sound"
+                    android:onClick="onCheckboxClicked"
+                    android:checked="false"/>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/show_icon"
+                    android:id="@+id/notification_setting_icon"
+                    android:onClick="onCheckboxClicked"
+                    android:checked="true"
+                    />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

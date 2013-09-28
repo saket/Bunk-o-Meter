@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:state_pressed="true"
+          android:drawable="@color/card_dismiss_button_pressed"/>
+
+    <!-- default -->
+    <item android:drawable="@color/card_dismiss_button_normal"/>
+
+</selector>

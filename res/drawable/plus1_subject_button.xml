@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- pressed -->
+    <item android:state_pressed="true"
+          android:drawable="@drawable/plusone_pressed"/>
+
+      <!-- default -->
+    <item android:drawable="@drawable/plusone"/>
+</selector>

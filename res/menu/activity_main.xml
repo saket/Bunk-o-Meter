@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+            android:id="@+id/main_activity_add_subject"
+            android:title="@string/menu_main_activity_add"
+            android:icon="@drawable/ic_action_add"
+            android:showAsAction="always"
+            />
+<!--
+    <item
+            android:id="@+id/main_activity_raw_table"
+            android:title="@string/menu_main_activity_debug"
+            android:orderInCategory="1"
+            android:showAsAction="collapseActionView"
+            />
+-->
+    <item
+            android:id="@+id/menu_tell_a_friend"
+            android:orderInCategory="2"
+            android:showAsAction="collapseActionView"
+            android:title="@string/menu_main_activity_TAF"
+            />
+
+    <item
+            android:id="@+id/menu_delete_all"
+            android:orderInCategory="3"
+            android:showAsAction="collapseActionView"
+            android:title="@string/menu_main_activity_delete_all"
+            />
+
+    <item
+            android:id="@+id/menu_notification_settings"
+            android:orderInCategory="4"
+            android:showAsAction="collapseActionView"
+            android:title="@string/menu_main_activity_notification_settings"
+            />
+
+    <item
+            android:id="@+id/menu_about"
+            android:orderInCategory="5"
+            android:showAsAction="collapseActionView"
+            android:title="@string/menu_main_activity_about"
+            />
+</menu>

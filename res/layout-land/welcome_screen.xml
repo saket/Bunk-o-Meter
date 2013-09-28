@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/welcome_screen_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bunkometer_bg_land"
+            android:scaleType="centerCrop"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bunkometer_logo"
+            android:src="@drawable/new_bunkometer_logo"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_button"
+            android:id="@+id/welcome_next_start"
+            android:textStyle="italic"
+            android:background="@drawable/welcome_start_button"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#ddd"/>
+
+    <TextView
+            android:id="@+id/start_button_border"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="#aa000000"
+            android:layout_alignBottom="@+id/welcome_next_start"
+            android:layout_alignLeft="@+id/welcome_next_start"/>
+
+</RelativeLayout>

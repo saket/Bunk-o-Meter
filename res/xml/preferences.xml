@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:title="Notification"
+        android:key="pref_reset_semester"
+        >
+
+            <intent
+                android:targetClass="com.saketme.bunkometer.NotificationSettings"
+                android:targetPackage="com.saketme.bunkometer"
+            />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="Automatic backup"
+        android:key="pref_cloud_sync"
+    ></PreferenceScreen>
+
+</PreferenceScreen>

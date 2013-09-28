@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:divider="?android:attr/dividerVertical"
+              android:showDividers="middle"
+              android:baselineAligned="false"
+              android:dividerPadding="12dp">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 style="?android:actionButtonStyle"
+                 android:id="@+id/bulk_add_subjects_discard"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1">
+
+        <TextView style="?android:actionBarTabTextStyle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:paddingRight="20dp"
+                  android:drawableLeft="@drawable/cancel_light"
+                  android:drawablePadding="8dp"
+                  android:gravity="center_vertical"
+                  android:text="@string/discard_text" />
+    </FrameLayout>
+    <FrameLayout
+                 style="?android:actionButtonStyle"
+                 android:id="@+id/bulk_add_subjects_save"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1">
+
+        <TextView style="?android:actionBarTabTextStyle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:paddingRight="20dp"
+                  android:drawableLeft="@drawable/tick"
+                  android:drawablePadding="8dp"
+                  android:gravity="center_vertical"
+                  android:text="@string/save_text" />
+    </FrameLayout>
+</LinearLayout>

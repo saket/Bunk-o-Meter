@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/tip_parent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true"
+              >
+
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:background="@drawable/add_subject_tour_tip"
+            android:text="@string/add_subjects_tip"
+            android:id="@+id/add_subjects_bunk_limit_info"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.25"
+            />
+
+</LinearLayout>

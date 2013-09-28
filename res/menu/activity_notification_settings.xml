@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/toggle_notification"
+        android:title="@string/toggle_notification"
+        android:actionLayout="@layout/notification_settings_action_bar"
+        android:showAsAction="always" />
+    
+</menu>

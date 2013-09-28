@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/spread_word_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="expandShareConfirmButtons"
+            android:background="@drawable/spread_word"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enjoying_bm"
+                android:id="@+id/liking_bunkometer"
+                android:paddingLeft="34dp"
+                android:paddingTop="4dp"
+                android:visibility="visible"
+                android:paddingRight="24dp"
+                android:layout_gravity="left|center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:textColor="#67696a"
+                />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/enjoying_bm_message"
+                    android:id="@+id/share_bunkometer_request"
+                    android:paddingLeft="34dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="24dp"
+                    android:visibility="gone"
+                    android:layout_gravity="left|center_vertical"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16dp"
+                    android:textColor="#67696a"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/touch_respond"
+                    android:id="@+id/touch_to_respond"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="4dp"
+                    android:textStyle="italic"
+                    android:paddingRight="24dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="12dp"
+                    android:textColor="#aaa"
+                    android:layout_gravity="center_horizontal|bottom"
+                    />
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":)"
+                android:id="@+id/textView2"
+                android:textSize="36dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="#8a8d8e"
+                />
+
+    </LinearLayout>

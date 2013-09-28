@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+            android:id="@+id/delete_all_subs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_all_subs_title"
+            android:textColor="#ff4444"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+    <TextView
+            android:id="@+id/delete_all_subs_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/delete_all_subs_message"
+            android:lineSpacingExtra="0dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="6dp"/>
+
+</LinearLayout>

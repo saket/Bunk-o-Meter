@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/hey_there"
+            android:textColor="#33b5e5"
+            android:textStyle="italic"
+            android:textSize="27dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dev_contact_message"
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:background="#eee"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+            android:baselineAligned="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/gplus_button_bg"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:id="@+id/gplus_container">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/gplus_icon"
+                    android:src="@drawable/gplus"
+                    android:scaleType="centerInside"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Google+"
+                    android:id="@+id/gplus_label"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:background="#eee"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/email_button_bg"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:id="@+id/email_container">
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/email_icon"
+                    android:src="@drawable/mail_icon"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/email"
+                    android:id="@+id/email_label"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

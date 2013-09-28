@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:background="@drawable/subject"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                    android:id="@+id/dynamic_longpress_item"
+                    android:layout_width="1dp"
+                    android:layout_height="68dp"
+                    android:layout_weight="0.82"
+                    android:background="@drawable/dynamic_subject_item"
+                    android:orientation="vertical" >
+
+                <TextView
+                        android:id="@+id/dynamic_subject_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="16dp"
+                        android:textStyle="italic"
+                        android:gravity="left"
+                        android:text="@string/subject_name"
+                        android:textColor="#666"
+                        android:textSize="22dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/countContainer"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                <TextView
+                        android:id="@+id/dynamic_bunk_percentage_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bunked"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#aaaaaa"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/dynamic_subject_name"
+                        android:layout_alignLeft="@+id/dynamic_subject_name"
+                        android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                        android:layout_width="72dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/countContainer">
+
+                    <TextView
+                            android:id="@+id/dynamic_bunk_count_grayed"
+                            android:layout_width="32dp"
+                            android:layout_height="fill_parent"
+                            android:fontFamily="sans-serif-light"
+                            android:text="0"
+                            android:textColor="#dcdcdc"
+                            android:textSize="54dp"
+                            android:layout_marginTop="-4dp"
+                            android:gravity="center_vertical|right"
+                            android:layout_toLeftOf="@+id/dynamic_bunk_count"
+                            />
+
+                    <TextView
+                            android:id="@+id/dynamic_bunk_count_grayed_hidden"
+                            android:layout_width="32dp"
+                            android:layout_height="64dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="3"
+                            android:textColor="#dcdcdc"
+                            android:textSize="54dp"
+                            android:layout_marginTop="-4dp"
+                            android:gravity="center_vertical|right"
+                            android:layout_below="@+id/dynamic_bunk_count_grayed"
+                            android:layout_alignLeft="@+id/dynamic_bunk_count_grayed"
+                            />
+
+                    <TextView
+                            android:id="@+id/dynamic_bunk_count"
+                            android:layout_width="32dp"
+                            android:layout_height="fill_parent"
+                            android:fontFamily="sans-serif-light"
+                            android:text="5"
+                            android:textColor="#4ebb74"
+                            android:textSize="54dp"
+                            android:layout_marginTop="-4dp"
+                            android:gravity="center_vertical|left"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/dynamic_bunk_count_hidden"
+                            android:layout_width="32dp"
+                            android:layout_height="64dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="2"
+                            android:textColor="#00c345"
+                            android:textSize="54dp"
+                            android:layout_marginTop="-4dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/dynamic_bunk_count"
+                            />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/dynamic_button_plus1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.18"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/plus1_subject_button"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="onClickPlus1"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+</LinearLayout>

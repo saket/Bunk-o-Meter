@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/subject_entry"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        >
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/subject_name_text"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="0.51"
+            android:layout_marginLeft="16dp"
+            android:textSize="16dp"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/subject_name"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:textSize="16dp"
+            android:ems="10"
+            android:maxLength="2"
+            android:id="@+id/bunk_limit_text"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="0.36"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/bunk_limit"/>
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="X"
+            android:id="@+id/delete_subject_entry"
+            android:onClick="deleteEntry"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.13"
+            android:singleLine="false"
+            style="?android:attr/buttonBarButtonStyle"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#898989"
+            />
+
+</LinearLayout>

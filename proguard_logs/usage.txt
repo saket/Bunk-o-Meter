@@ -1,0 +1,39 @@
+com.saket.bunkometer.BrainHandler:
+    private static final java.lang.String DATABASE_NAME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String TABLE_NAME
+    private static final java.lang.String KEY_ID
+    private static final java.lang.String KEY_CONDITION_ID
+    private static final java.lang.String KEY_STATE
+    private static final java.lang.String KEY_VISIBILITY
+    131:144:public java.lang.String getState(java.lang.String)
+    159:162:public void dropTable()
+com.saket.bunkometer.BuildConfig
+com.saket.bunkometer.Classes:
+    13:17:public Classes(java.lang.String,int,int)
+    21:21:public int getId()
+    37:37:public java.lang.String getLastBunkDate()
+com.saket.bunkometer.DatabaseHandler:
+    private static final java.lang.String DATABASE_NAME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String TABLE_NAME
+    private static final java.lang.String KEY_ID
+    private static final java.lang.String KEY_SUBJECT
+    private static final java.lang.String KEY_BUNKED_CLASSES
+    private static final java.lang.String KEY_LIMIT
+    private static final java.lang.String KEY_DATE
+    private static final java.lang.String KEY_PERCENT
+    228:243:public java.lang.String lastDateBeforeAddingNewSubject()
+com.saket.bunkometer.R
+com.saket.bunkometer.R$anim
+com.saket.bunkometer.R$attr
+com.saket.bunkometer.R$color
+com.saket.bunkometer.R$drawable
+com.saket.bunkometer.R$id
+com.saket.bunkometer.R$layout
+com.saket.bunkometer.R$menu
+com.saket.bunkometer.R$string
+com.saket.bunkometer.R$style
+com.saket.bunkometer.R$xml
+com.saket.bunkometer.Subjects_list:
+    76:83:public void resetBrain()

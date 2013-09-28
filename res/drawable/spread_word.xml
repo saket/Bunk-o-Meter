@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- pressed -->
+    <item android:state_pressed="true"
+          android:drawable="@color/spread_word_pressed" />
+
+    <!-- default -->
+    <item
+            android:drawable="@color/spread_word_normal" />
+
+
+</selector>

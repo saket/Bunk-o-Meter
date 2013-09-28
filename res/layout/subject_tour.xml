@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/tip_parent"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true"
+        >
+
+    <RelativeLayout
+            android:id="@+id/tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="56dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="8dp"
+            >
+
+        <ViewFlipper
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subject_tour_viewFlipper"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/subject_tour_left"
+                    android:text="@string/subject_tour_tip_1"
+                    android:id="@+id/subject_tour_tip_1"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/subject_tour_right"
+                    android:text="@string/subject_tour_tip_2"
+                    android:id="@+id/subject_tour_tip_2"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/subject_tour"
+                    android:text="@string/subject_tour_tip_3"
+                    android:id="@+id/subject_tour_tip_3"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    />
+
+        </ViewFlipper>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/OK"
+                android:id="@+id/subject_tour_ok_button"
+                android:textColor="#999"
+                android:layout_gravity="right|center_vertical"
+                android:layout_below="@+id/subject_tour_viewFlipper"
+                android:layout_alignRight="@+id/subject_tour_viewFlipper"
+                android:textStyle="italic"
+                android:textSize="22dp"
+                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/ok_button"/>
+
+    </RelativeLayout>
+</LinearLayout>

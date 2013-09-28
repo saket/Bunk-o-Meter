@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#d3d7d9"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="16dp">
+
+    <ScrollView
+            android:id="@+id/bulk_add_subjects_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/subject"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_subjects_title"
+                android:id="@+id/add_multiple_subjects_title"
+                android:singleLine="false"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="26dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textColor="#33b5e5"
+                android:textStyle="italic"/>
+
+        <TextView
+                android:id="@+id/bulk_add_error_message_duplicate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingBottom="8dp"
+                android:text="@string/duplicate_entry_error"
+                android:visibility="gone"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="#ac59d6"
+                />
+
+        <TextView
+                android:id="@+id/bulk_add_error_message_already_exists"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:visibility="gone"
+                android:paddingBottom="8dp"
+                android:text="@string/sub_exists_error"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="#ffae18"
+                />
+
+        <TextView
+                android:id="@+id/bulk_add_error_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:visibility="gone"
+                android:paddingBottom="8dp"
+                android:text="@string/fields_empty_error"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="#f83a3a"
+                />
+
+        <LinearLayout
+                android:id="@+id/bulk_add_subjects_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_another_label"
+                    android:textSize="17dp"
+                    android:id="@+id/bulk_add_another_subject"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="14dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center|left"
+                    android:onClick="addEntry"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

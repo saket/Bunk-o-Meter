@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+    <TextView
+            android:id="@+id/delete_all_subs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/tell_a_friend_title"
+            android:textColor="#33B5E5"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="8dp"/>
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/share_bunkometer_message"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/share_bunkometer_message"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#333"
+            android:textSize="15dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play_store_link_attach"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#666"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="12dp"/>
+
+
+</LinearLayout>

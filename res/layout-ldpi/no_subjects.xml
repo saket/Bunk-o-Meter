@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_subjects_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/psst_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/arrow" />
+
+    <LinearLayout
+        android:id="@+id/no_subjects_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psst_arrow"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/subject"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/no_subjects_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/no_subjects_title"
+            android:textColor="#33b5e5"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/no_subjects_h2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="7dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:text="@string/no_subjects_msg"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

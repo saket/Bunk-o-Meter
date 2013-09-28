@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="fill_parent"
+              >
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/about_us_cover"
+                    android:layout_gravity="center"
+                    android:src="@drawable/about_front"
+                    android:scaleType="centerInside"
+                    android:background="#0099cc"
+                    android:paddingRight="32dp"
+                    android:paddingLeft="32dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#2a8db1"
+                    />
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/the_app"
+                            android:id="@+id/about_the_app"
+                            android:layout_gravity="left"
+                            android:textColor="#777"
+                            android:textStyle="italic"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="4dp"/>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/subject">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#fff"
+                                android:text="@string/about_main_messsage"
+                                android:id="@+id/about_main_messsage"
+                                android:padding="16dp"
+                                android:layout_gravity="center"
+                                android:singleLine="false"
+                                android:fontFamily="sans-serif-light"
+                                android:textSize="16dp"
+                                android:textColor="#222"
+                                />
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#d3d7d9"
+                                />
+
+                        <LinearLayout
+                                android:id="@+id/about_submit_feedback_button"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="onClick"
+                                android:background="@drawable/rate_on_play_store_bg"
+                                >
+
+                            <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="fill_parent"
+                                    android:src="@drawable/lab"
+                                    android:layout_marginLeft="24dp"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/send_feedback_bug_report"
+                                    android:textSize="14dp"
+                                    android:textColor="#555"
+                                    android:paddingTop="12dp"
+                                    android:paddingBottom="12dp"
+                                    android:paddingLeft="12dp"
+                                    />
+                        </LinearLayout>
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#d3d7d9"
+                                />
+
+                        <LinearLayout
+                                android:id="@+id/rate_on_play_store_button"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:onClick="onClick"
+                                android:background="@drawable/rate_on_play_store_bg"
+                                >
+
+                            <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="fill_parent"
+                                    android:src="@drawable/play_store_icon"
+                                    android:layout_marginLeft="24dp"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/rate_on_play_store"
+                                    android:textSize="14dp"
+                                    android:paddingTop="12dp"
+                                    android:textColor="#555"
+                                    android:paddingBottom="12dp"
+                                    android:paddingLeft="12dp"
+                                    />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/the_dev"
+                            android:id="@+id/about_the_dev"
+                            android:layout_gravity="left"
+                            android:textColor="#777"
+                            android:textStyle="italic"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="16dp"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/subject"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                        <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/developer_icon"
+                                android:layout_gravity="center_vertical|left"
+                                android:onClick="onClick"
+                                android:scaleType="centerCrop"
+                                style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                                android:background="@drawable/dev_icon_bg"
+                                android:src="@drawable/dev_icon"/>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                >
+
+                            <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/saket"
+                                    android:id="@+id/about_saket_narayan"
+                                    android:textColor="#333"
+                                    android:fontFamily="sans-serif-light"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="16dp"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="@string/touch_know"
+                                    android:id="@+id/about_touch_to_know_more"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:paddingLeft="16dp"
+                                    android:textColor="#aaa"
+                                    android:fontFamily="sans-serif-light"
+                                    android:textSize="16dp"
+                                    android:textStyle="italic"
+                                    />
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView2"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:src="@drawable/about_arrow"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/special_thanks"
+                            android:id="@+id/about_helping_hands"
+                            android:layout_gravity="left"
+                            android:textColor="#777"
+                            android:textStyle="italic"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="4dp"/>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/subject"
+                            >
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_special_thanks_message"
+                                android:id="@+id/about_main_special_thanks"
+                                android:padding="16dp"
+                                android:lineSpacingExtra="4dp"
+                                android:layout_gravity="center"
+                                android:singleLine="false"
+                                android:fontFamily="sans-serif-light"
+                                android:textSize="15dp"
+                                android:textColor="#555"
+                                />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

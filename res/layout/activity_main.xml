@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            >
+
+        <TextView
+            android:id="@+id/main_activity_subjects_label"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/main_activity_subjects"
+            android:textColor="#33b5e5"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="28dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tips_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/main_activity_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+	       <LinearLayout
+	           android:id="@+id/main_activity_subjects_list"
+	           android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+	           android:animateLayoutChanges="true"
+	           android:orientation="vertical" >
+
+               <LinearLayout
+                       android:id="@+id/main_subjects_container"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:animateLayoutChanges="true"
+                       android:orientation="vertical" >
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+    </ScrollView>
+ 
+</LinearLayout>
