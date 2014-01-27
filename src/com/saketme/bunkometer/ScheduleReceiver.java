@@ -12,26 +12,39 @@ import java.util.Calendar;
 
 public class ScheduleReceiver extends BroadcastReceiver {
 
+    private PendingIntent pintent;
+    private Context mContext;
+
     @Override
     public void onReceive(Context context, Intent intent) {
 
         //Log.i("Schedule Receiver", "Broadcast received.");
 
         Intent i = new Intent(context, TimedNotification.class);
-        PendingIntent pintent = PendingIntent.getService(context, 0, i, 0);
+        pintent = PendingIntent.getService(context, 0, i, 0);
+        mContext = context;
 
-        AlarmManager alarm = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+        // Only schedule for weekdays, Mon-Fri
+        // Extensible for custom days (better-pickers has a recurrence picker now
+        for (int day = 2; day < 7; ++day) {
+            scheduleAlarm(day);
+        }
+    }
+
+    private void scheduleAlarm(int dayOfWeek) {
+        AlarmManager alarm = (AlarmManager) mContext.getSystemService(Context.ALARM_SERVICE);
 
         //Get time instances
         //Calendar mCurrentTime = Calendar.getInstance();
         Calendar mTargetTime = Calendar.getInstance();
 
         //Get notification time preferences
-        SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
         int mNotificationTimeHour = mPreferences.getInt("notification_time_hour", 19);
         int mNotificationTimeMinute = mPreferences.getInt("notification_time_minute", 30);
 
         //set target time
+        mTargetTime.set(Calendar.DAY_OF_WEEK, dayOfWeek);
         mTargetTime.set(Calendar.HOUR_OF_DAY, mNotificationTimeHour);
         mTargetTime.set(Calendar.MINUTE, mNotificationTimeMinute);
         mTargetTime.set(Calendar.SECOND, 0);
@@ -59,6 +72,5 @@ public class ScheduleReceiver extends BroadcastReceiver {
         alarm.setRepeating(AlarmManager.RTC, START_TIME, TIME_DELAY, pintent);
 
         //Log.i("Schedule Receiver", "Broadcast ending. Set alarm time: " + START_TIME);
-
     }
 }
