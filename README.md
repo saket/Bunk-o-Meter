@@ -1,7 +1,7 @@
 Bunk-o-Meter
 ============
 
-#####Update: It's been 2.5 years since I wrote this app. Please avoid going through the project files. The code is really embarassing :P
+##### Update: It's been 2.5 years since I wrote this app. Please avoid going through the project files. The code is really embarassing :P
 
 About
 --------------
